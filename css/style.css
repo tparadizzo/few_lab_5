@@ -1,0 +1,138 @@
+#mainSidebar {
+    display: none;
+    padding-top: 100px;
+    right: 0;
+    z-index: 2;
+    font-size: 20px;
+}
+
+#image {
+    width: 50%;
+}
+
+.sibebar-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sibebar-block a {
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.sibebar-block a:hover {
+    background-color: #c2c2c2;
+    color: #000;
+}
+
+.row-padding img {
+    margin-bottom: 12px;
+}
+
+.main-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../image/gym_logo.jpg);
+  min-height: 100%;
+}
+
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+footer, header, nav {
+    display: block;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+a { 
+    background-color: transparent;
+    color: inherit;
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto;
+}
+
+.bg-black, .bg-black:hover { 
+    color: #fff!important; 
+    background-color: #000!important;
+    
+}
+
+.container-content {
+    padding: 0 10px;
+    min-height: 100vh;    
+}
+.photo-container img {
+    width: 100%;
+    padding: 10px;
+}
+
+sidebar-animate {
+    position: relative;
+    animation: animateright 0.4s;
+}
+@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+.page-content {
+    margin-left: 50%;
+    background: url(../image/img_1.jpg);
+    background-repeat: no-repeat; 
+    
+}
+
+.page-container {
+    padding: 30px 16p;
+}
+
+body#page-home .page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    text-align: center;
+    font-weight: bold;
+    margin: 50px 0 0 0;
+    font-size: 3.5em;
+}
+
+.container-content p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.container-content {
+    padding: 0 10px;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
