@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tábita Paradizzo - Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <!-- PROFILE IMAGE -->
+  <nav class="sidebar" id="myImage">
+    <div class="home-img"></div>
+  </nav>
+
+  <!-- MENU -->
+  <nav class="sidebar bg-black sidebar-animate" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="btn-button bg-black" id="hiddenSidebar">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="sibebar-block">
+        <a href="index.html" onclick="closeNav()">Home</a>
+        <a href="about.html" onclick="closeNav()">About Me</a>
+        <a href="#" onclick="closeNav()">Contact</a>
+      </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="page-content">
+    <!-- ICON MENU -->
+    <span class="btn-button icon-sidebar" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- HEADER -->
+    <header class="page-container" id="home">
+      <h1 class="text-container">
+        Strong Gym
+      </h1>
+      <p>
+        Enjoy your life and have fun changing your body and habit.
+      </p>
+    </header>
+
+    <!-- CONTACT ME  -->
+    <div class="container-content" id="contact" style="margin-bottom:64px">
+      <h2>Contact Us</h2>
+      <hr>
+      <div class="contact-container">
+        <p><a href="https://goo.gl/maps/hVYCF4n61qckKMX16" target="_blank"><i class="fa fa-map-marker"></i> Dublin, Ireland</a></p>
+        <p><a href="mailto:contact@stronggym.ie"><i class="fa fa-envelope"> </i> contact@stronggym.ie</a></p>
+      </div>    
+    </div>  
+    
+    <!-- FOOTER -->
+    <footer>
+      <small>Strong Gym @ 2020</small>
+    </footer>
+  </div>
+
+</body>
+</html>

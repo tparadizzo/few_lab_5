@@ -1,4 +1,4 @@
-#mainSidebar {
+#mySidebar {
     display: none;
     padding-top: 100px;
     right: 0;
@@ -6,8 +6,15 @@
     font-size: 20px;
 }
 
-#image {
+#myImage {
     width: 50%;
+}
+
+#hiddenSidebar {
+    padding: 0 12px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
 }
 
 .sibebar-block {
@@ -27,24 +34,23 @@
     color: #000;
 }
 
-.row-padding img {
-    margin-bottom: 12px;
-}
-
-.main-image {
+.home-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../image/gym_logo.jpg);
+  background-image: url('../images/gym.jpg');
   min-height: 100%;
 }
-
 
 html {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -64,6 +70,23 @@ a {
     color: inherit;
 }
 
+a:active, a:hover {
+    outline-width: 0;
+}
+
+button, input {
+    overflow:visible;
+    font: inherit;
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 10px 0;
+
+}
+
 .sidebar {
     height: 100%;
     width: 200px;
@@ -76,33 +99,47 @@ a {
 .bg-black, .bg-black:hover { 
     color: #fff!important; 
     background-color: #000!important;
-    
 }
 
-.container-content {
-    padding: 0 10px;
-    min-height: 100vh;    
-}
-.photo-container img {
-    width: 100%;
-    padding: 10px;
-}
-
-sidebar-animate {
+.sidebar-animate {
     position: relative;
     animation: animateright 0.4s;
 }
 @keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
 
+.btn-button {
+    border: none;
+    display: inline-block; 
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.sidebar-block {
+    width: 100%;
+    min-width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+}
+
+.icon-sidebar {
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+}
+
 .page-content {
     margin-left: 50%;
-    background: url(../image/img_1.jpg);
-    background-repeat: no-repeat; 
-    
 }
 
 .page-container {
-    padding: 30px 16p;
+    padding: 30px 16px;
 }
 
 body#page-home .page-container {
@@ -120,14 +157,19 @@ body#page-home .page-container {
     font-size: 3.5em;
 }
 
-.container-content p {
+.page-container p {
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .container-content {
     padding: 0 10px;
-    min-height: 100vh;
+    min-height: 100vh;    
+}
+
+.about-container p {
+    word-wrap: break-word;
+    text-align: center;
 }
 
 footer {
@@ -135,4 +177,22 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px;
+}
+
+.contact-container a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .page-content {
+        margin-left: 0;
+    }
+
+    body#page-skills .ul-skills {
+        flex-direction: column;
+    }
 }

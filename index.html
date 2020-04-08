@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strong Gym</title>
 
-    <title>Gym</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- CSS link -->
-    <link rel="stylesheet" href="../lab5/css/style.css">
+    <!-- JS -->
+    <script src="js/main.js"></script>
 
-    <!-- JS link -->
-    <script src="../lab5/js/main.js"></script>
-
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body id="page-home">
 
-    <!-- Main Page -->
-    <nav class="sidebar" id="image">
-        <div class="main-image"></div>
-    </nav>
+  <!-- Page Home Image -->
+  <nav class="sidebar" id="myImage">
+    <div class="home-img"></div>
+  </nav>
 
-    <!-- Content -->
-    <div class="page-content">
-        <span class="btn-button icon-sidebar" onclick="openNav()">
-            <i class="fa fa-bars">
-            </i>
-        </span>
-
-
-        <!--Photo main left -->
-        <div class="container-content" id="photo">
-            <div class="photo-container">
-                <img src="image/img_1.jpg">
-
-            </div>
-                <h2 class="text-container">Fitness Gym</h2>
-
-                <p>…strength and conditioning machines from dual and single pulleys, lat pull-downs, chest and shoulder press machines. We also boast a large free weight room which includes 5 squat racks, a Smith Machine and huge selection of plates. Our expert coaches are always available to introduce and encourage you to use our facility to its maximum potential. BetterBody has the ultimate fitness experience at your disposal. Our unique programming will challenge and inspire you to get into great shape and feel healthy. On signing up for any of our long term packages for the gym we include PTs and a consultation, after your initial induction we follow up with progressions from your previous program. Whether you play sport, want to lose weight or gain weight, this is the place for you! At BetterBody we do not believe that everybody can benefit from the one generic nutrition plan. All our clients will be extensively analysed during the screening process and throughout so we can get you the results you deserve.</p>
-            
-        </div>
-
-
-
-
-
-        <!-- Footer -->
-        <footer>
-            <small>Fitness Gym @ 2020</small>
-        </footer>
+  <!-- MENU -->
+  <nav class="sidebar bg-black sidebar-animate" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="btn-button bg-black" id="hiddenSidebar">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="sibebar-block">
+      <a href="#" onclick="closeNav()">Home</a>
+      <a href="about.html" onclick="closeNav()">About</a>
+      <a href="contact.html" onclick="closeNav()">Contact</a>
     </div>
-</body>
+  </nav>
 
+  <!-- CONTENT -->
+  <div class="page-content">
+    <!-- ICON MENU -->
+    <span class="btn-button icon-sidebar" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- HEADER -->
+    <header class="page-container">
+      <h1 class="text-container">
+        Strong Gym
+      </h1>
+      <p>
+        Enjoy your life and have fun changing your body and habit.
+      </p>
+    </header>
+    
+    <!-- FOOTER -->
+    <footer>
+      <small>Strong Gym @ 2020</small>
+    </footer>
+  </div>
+
+</body>
 </html>
